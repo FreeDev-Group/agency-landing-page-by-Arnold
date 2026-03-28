@@ -1,0 +1,53 @@
+/* ============================= */
+/*         RESET CSS             */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/*       FRONT-END STYLE GUIDE   */
+/* ============================= */
+
+/* --------- COLORS --------- */
+:root {
+    /* Primary Colors */
+    --red-400: hsl(7, 99%, 70%);
+    --yellow-500: hsl(51, 100%, 49%);
+    --green-800: hsl(167, 40%, 24%); /* graphic design text */
+    --blue-800: hsl(198, 62%, 26%);  /* photography text */
+    --green-500: hsl(167, 34%, 41%); /* footer */
+
+    /* Neutral Colors */
+    --grey-950: hsl(212, 27%, 19%);
+    --grey-600: hsl(213, 9%, 39%);
+    --grey-550: hsl(232, 10%, 55%);
+    --grey-400: hsl(210, 4%, 67%);
+    --white: hsl(0, 100%, 100%);
+}
+
+/* --------- TYPOGRAPHY --------- */
+body {
+    min-height: 100vh;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--grey-950);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700; /* Use 900 for main headings if needed */
+    color: var(--grey-950);
+    line-height: 1.2;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: var(--grey-600);
+    margin-bottom: 1rem;
+}
