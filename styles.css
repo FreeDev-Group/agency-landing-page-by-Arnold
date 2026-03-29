@@ -166,7 +166,7 @@ a {
 }
 
 .graphic-design {
-  background-image: url('images/image-graphic-design.jpg');
+  background-image: url('images/image-transform.jpg');
   color: var(--color-dark-desat-cyan);
 }
 .graphic-design h3 { color: var(--color-dark-desat-cyan); }
@@ -265,4 +265,75 @@ a {
   color: var(--color-gray-blue);
   font-family: var(--font-base);
   font-weight: 600;
+}
+
+/* =========================================
+   ISSUE 8 & 10: FOOTER SECTION
+   ========================================= */
+.site-footer {
+  background-color: hsl(167, 44%, 70%);
+  padding: 4.5rem 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* Base tint for the SVG (matches footer color scheme) */
+.footer-logo img {
+  height: 35px;
+  filter: invert(36%) sepia(18%) saturate(1454%) hue-rotate(120deg) brightness(91%) contrast(87%);
+}
+
+.footer-nav {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.footer-nav a {
+  color: var(--color-dark-desat-cyan);
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  position: relative;
+}
+
+/* Hover Polish */
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+  color: var(--color-white);
+  opacity: 1;
+}
+
+.footer-nav a:focus-visible {
+  outline: 2px dotted var(--color-white);
+  outline-offset: 4px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-socials a img {
+  height: 20px;
+  transition: filter 0.3s ease;
+  filter: invert(36%) sepia(18%) saturate(1454%) hue-rotate(120deg) brightness(91%) contrast(87%);
+}
+
+.footer-socials a:hover img,
+.footer-socials a:focus-visible img {
+  filter: brightness(0) invert(1);
+}
+
+.footer-socials a:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 8px;
+  border-radius: 2px;
 }
