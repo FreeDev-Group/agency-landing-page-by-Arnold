@@ -1,0 +1,26 @@
+/* CTA Button - Issue #4 */
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+/* Hero Background Desktop */
+.header {
+  background: url('images/image-header.jpg') center/cover no-repeat;
+}
+
+/* Hero Background Mobile */
+@media (max-width: 768px) {
+  .header {
+    background: url('images/image-header.jpg') center/cover no-repeat;
+  }
+}
