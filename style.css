@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* CTA Button - Issue #4 */
 .btn {
   background: white;
@@ -22,7 +26,29 @@
 @media (max-width: 768px) {
   .header {
     background: url('images/image-header.jpg') center/cover no-repeat;
+
+/* Tablette : entre 769px et 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Ajustement du hero */
+  .header {
+    background-size: cover;
+    background-position: center;
   }
+
+  /* Navigation si nécessaire */
+  .nav-links {
+    width: 300px; /* plus large sur tablette */
+    padding: 80px 40px;
+  }
+
+  /* Boutons CTA */
+  .btn {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+}  
+}
+
 }
 
 /* Overlay */
@@ -41,6 +67,16 @@
   display: block;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    height: 400px; /* hauteur réduite pour mobile */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* Mobile menu */
 @media (max-width: 768px) {
   .nav-links {
