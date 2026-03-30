@@ -166,13 +166,13 @@ a {
 }
 
 .graphic-design {
-  background-image: url('images/image-transform.jpg');
+  background-image: url('images/desktop/image-graphic-design.jpg');
   color: var(--color-dark-desat-cyan);
 }
 .graphic-design h3 { color: var(--color-dark-desat-cyan); }
 
 .photography {
-  background-image: url('images/image-photography.jpg');
+  background-image: url('images/desktop/image-photography.jpg');
   color: var(--color-dark-blue);
 }
 .photography h3 { color: var(--color-dark-blue); }
