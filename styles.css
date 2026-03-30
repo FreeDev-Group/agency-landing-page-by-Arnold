@@ -36,6 +36,7 @@ body {
     font-size: 18px;
     color: var(--grey-950);
     line-height: 1.6;
+    background-color: gray; /* temporaire pour test */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,14 +84,14 @@ nav a {
     transition: 0.3s;
 }
 
-/* Logo Styling */
+/* --------- Logo Styling --------- */
 nav li:first-child {
     margin-right: auto;
     font-size: 25px;
     font-weight: bold;
 }
 
-/* Contact Button Styling */
+/* --------- Contact Button Styling --------- */
 .contact a {
     color: var(--grey-950);
     background-color: var(--white);
@@ -98,11 +99,79 @@ nav li:first-child {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: bold;
-    padding: 8px 15px;
+    padding: 8px 15px; /* top/bottom 8px, left/right 15px */
     transition: 0.2s;
 }
 
 .contact a:hover {
     color: var(--white);
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ============================= */
+/*           SIDEBAR (Mobile)    */
+/* ============================= */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999; 
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    color: var(--white);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sidebar a:hover {
+    background-color: var(--white);
+    color: var(--grey-950);
+    border-radius: 20px;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+/* --------- Mobile Menu Button --------- */
+.menu-button {
+    display: none;
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+@media (min-width: 800px) {
+    .sidebar {
+        display: none !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-item {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .sidebar {
+        width: 100%;
+    }
 }

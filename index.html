@@ -8,17 +8,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
+    <!-- ============================= -->
+    <!--           HEADER             -->
+    <!-- ============================= -->
     <header>
         <nav class="navbar">
+
+            <!-- ======= SIDEBAR (MOBILE MENU) ======= -->
+            <ul class="sidebar">
+                <li class="close-button" onclick="hidesidebar()">
+                    <img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"Close Menu">
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- ======= DESKTOP NAVBAR ======= -->
             <ul class="nav-list">
-                <li class="nav-item"><a href="#">Sunnyside</a></li>
+                <li class="nav-logo"><a href="#">Sunnyside</a></li>
                 <li class="nav-item"><a href="#">About</a></li>
                 <li class="nav-item"><a href="#">Services</a></li>
                 <li class="nav-item"><a href="#">Projects</a></li>
                 <li class="nav-item contact"><a href="#">Contact</a></li>
+
+                <!-- MOBILE MENU BUTTON -->
+                <li class="menu-button" onclick="showsidebar()">
+                    <a href="#">
+                        <img src="images/menu_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" height="36" width="36" alt="Menu">
+                    </a>
+                </li>
             </ul>
+
         </nav>
     </header>
+
+    <!-- ============================= -->
+    <!--           SCRIPT             -->
+    <!-- ============================= -->
+    <script src="script.js"></script>
 </body>
 </html>
