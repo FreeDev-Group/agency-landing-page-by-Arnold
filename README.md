@@ -31,17 +31,20 @@ Users should be able to:
 
 ---
 
-## Screenshot
+## Screenshot Desktop
 
-![Project Screenshot solution project ] (./screenshot-desktop.png)
-![Project Screenshot solution project ] (./screenshot-mobile.png)
+![Project Screenshot solution project](./Screenshot-desktop.png)
+
+## Screenshot Mobile
+
+![Project Screenshot solution project](./Screenshot-mobile.png)
 
 ---
 
 ## Links
 
-- Live Site URL: _(very soon)_
-- Repository URL: _(https://github.com/FreeDev-Group/agency-landing-page-by-Arnold)_
+- Live Site URL: [Bientôt disponible](https://github.com/FreeDev-Group/agency-landing-page-by-Arnold)
+- Repository URL: [Lien du dépôt GitHub](https://github.com/FreeDev-Group/agency-landing-page-by-Arnold)
 
 ---
 
@@ -128,8 +131,11 @@ In future improvements, we would like to:
 
 ## Authors
 
-- Team GAUTIER @arnold, @Edouard and@Dieu-merci
 - Built with collaboration and teamwork
+- [Mugisho-dev-metasploit](https://github.com/Mugisho-dev-metasploit)
+- [edouardkne](https://github.com/edouardkne)
+- [ElGautinho](https://github.com/ElGautinho)
+- [arnold722](https://github.com/arnold722)
 
 ---
 
