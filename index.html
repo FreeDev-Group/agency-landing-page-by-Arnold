@@ -3,50 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agency Landing Page</title>
-    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- ============================= -->
-    <!--           HEADER             -->
-    <!-- ============================= -->
-    <header>
-        <nav class="navbar">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-            <!-- ======= SIDEBAR (MOBILE MENU) ======= -->
-            <ul class="sidebar">
-                <li class="close-button" onclick="hidesidebar()">
-                    <img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"Close Menu">
-                </li>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">sunnyside</h1>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">CONTACT</a></li>
             </ul>
-
-            <!-- ======= DESKTOP NAVBAR ======= -->
-            <ul class="nav-list">
-                <li class="nav-logo"><a href="#">Sunnyside</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Services</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item contact"><a href="#">Contact</a></li>
-
-                <!-- MOBILE MENU BUTTON -->
-                <li class="menu-button" onclick="showsidebar()">
-                    <a href="#">
-                        <img src="images/menu_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg" height="36" width="36" alt="Menu">
-                    </a>
-                </li>
-            </ul>
-
         </nav>
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="hero-content">
+            <h2>WE ARE CREATIVES</h2>
+            <img src="images/icon-arrow-down.svg" alt="Arrow pointing down" class="arrow-down">
+        </div>
     </header>
 
-    <!-- ============================= -->
-    <!--           SCRIPT             -->
-    <!-- ============================= -->
-    <script src="script.js"></script>
+    <main>
+
+        <!-- Issue 5: Services Section -->
+        <section id="services" class="services">
+            <div class="services-grid">
+                <div class="service-text service-text-transform">
+                    <h2>Transform your brand</h2>
+                    <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your
+                        clients through compelling visuals that do most of the marketing for you.</p>
+                    <a href="#" class="btn-learn-more btn-yellow">Learn more</a>
+                </div>
+
+                <div class="service-image service-img-transform">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/image-transform.jpg">
+                        <img src="images/mobile/image-transform.jpg" alt="Transform your brand - egg picture">
+                    </picture>
+                </div>
+
+                <div class="service-image service-img-standout">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/image-stand-out.jpg">
+                        <img src="images/mobile/image-stand-out.jpg"
+                            alt="Stand out to the right audience - glass picture">
+                    </picture>
+                </div>
+
+                <div class="service-text service-text-standout">
+                    <h2>Stand out to the right audience</h2>
+                    <p>Using a collaborative formula of designers, researchers, photographers, videographers, and
+                        copywriters, we'll build and extend your brand in digital places.</p>
+                    <a href="#" class="btn-learn-more btn-red">Learn more</a>
+                </div>
+
+                <!-- Graphic Design & Photography -->
+                <div class="service-card graphic-design">
+                    <div class="card-content">
+                        <h3>Graphic design</h3>
+                        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and
+                            captures potential clients' attention.</p>
+                    </div>
+                </div>
+
+                <div class="service-card photography">
+                    <div class="card-content">
+                        <h3>Photography</h3>
+                        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your
+                            business image.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
 </body>
 </html>
