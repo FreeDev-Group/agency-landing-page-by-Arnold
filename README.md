@@ -43,8 +43,8 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Bientôt disponible](https://github.com/FreeDev-Group/agency-landing-page-by-Arnold)
-- Repository URL: [Lien du dépôt GitHub](https://github.com/FreeDev-Group/agency-landing-page-by-Arnold)
+- Live Site URL: https://freedev-group.github.io/agency-landing-page-by-Arnold/
+- Repository URL: https://github.com/FreeDev-Group/agency-landing-page-by-Arnold
 
 ---
 
@@ -100,7 +100,7 @@ We followed best practices such as:
 
 ```
 ├── index.html
-├── styles.css
+├── style.css
 ├── images
 │── script.js
 └── README.md
@@ -132,10 +132,9 @@ In future improvements, we would like to:
 ## Authors
 
 - Built with collaboration and teamwork
-- [Mugisho-dev-metasploit](https://github.com/Mugisho-dev-metasploit)
-- [edouardkne](https://github.com/edouardkne)
-- [ElGautinho](https://github.com/ElGautinho)
-- [arnold722](https://github.com/arnold722)
+- https://github.com/Mugisho-dev-metasploit
+- https://github.com/ElGautinho
+- https://github.com/arnold722
 
 ---
 
