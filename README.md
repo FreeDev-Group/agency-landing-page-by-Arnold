@@ -138,6 +138,11 @@ In future improvements, we would like to:
 
 ---
 
+## How to run locally
+
+1. Clone this repository  
+2. Open `index.html` in your browser  
+
 ## Acknowledgments
 
 - Mentors challenge their mentees
