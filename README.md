@@ -135,6 +135,7 @@ In future improvements, we would like to:
 - https://github.com/Mugisho-dev-metasploit
 - https://github.com/ElGautinho
 - https://github.com/arnold722
+- https://github.com/edouardkne
 
 ---
 
